@@ -1,0 +1,23 @@
+# Tag a version (git tag v0.1.0 && git push --tags) and this workflow builds the
+# skill zip and attaches it to a GitHub Release. The site's install page links to
+# the latest release's zip, so a new release updates the download automatically.
+name: Release skill
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build skill zip
+        run: ./scripts/build-skill.sh
+      - name: Create release with the zip attached
+        run: gh release create "$GITHUB_REF_NAME" dist/helloworld-prompts.zip --title "$GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
