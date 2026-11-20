@@ -1,9 +1,11 @@
 ---
 title: "Meeting Notes to Follow-up Email"
 description: "Turn rough meeting notes into a short, clear follow-up email with next steps and owners."
-tags: ["email", "meetings", "sales"]
+tags: ["email"]
+inputs: ["WHO I MET WITH", "PASTE NOTES"]
+weight: 2
 ---
-Before you start, ask me for any values in [SQUARE BRACKETS] that I haven't filled in. Ask for all of them in one message.
+Before you start, ask me for any values in square brackets that I haven't filled in. Ask for all of them in one message.
 
 Here are my rough notes from a meeting with [WHO I MET WITH]:
 

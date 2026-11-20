@@ -1,9 +1,11 @@
 ---
 title: "Explain Like I'm New"
 description: "Explain an unfamiliar concept to a smart newcomer, with an analogy and a quick check for understanding."
-tags: ["learning", "explain"]
+tags: ["explain"]
+inputs: ["CONCEPT"]
+weight: 1
 ---
-Before you start, ask me for any values in [SQUARE BRACKETS] that I haven't filled in. Ask for all of them in one message.
+Before you start, ask me for any values in square brackets that I haven't filled in. Ask for all of them in one message.
 
 I'm new to [CONCEPT]. Explain it to me as if I'm smart but have no background in it.
 
